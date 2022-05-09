@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="630.0" prefWidth="618.0" style="-fx-background-color: #00001e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ManagerPage">
+   <children>
+      <ImageView fitHeight="414.0" fitWidth="462.0" layoutX="102.0" layoutY="14.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../businessman-in-suit-head-vector-icon.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblWelcomeManager" layoutX="188.0" layoutY="27.0" text="Welcome Manager" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnClientInfo" layoutX="114.0" layoutY="209.0" onAction="#pressBtnClientInfo" text="Client Info" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAllTransactions" layoutX="259.0" layoutY="209.0" onAction="#pressBtnAllTransactions" text="All Transactions" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" layoutX="453.0" layoutY="209.0" onAction="#pressBtnExit" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXListView fx:id="LVClientInfo" layoutX="47.0" layoutY="257.0" prefHeight="352.0" prefWidth="535.0" style="-fx-background-color: #00001e;" visible="false" />
+      <JFXListView fx:id="LVAllTransactions" layoutX="201.0" layoutY="261.0" prefHeight="352.0" prefWidth="241.0" style="-fx-background-color: #00001e;" visible="false" />
+   </children>
+</AnchorPane>
